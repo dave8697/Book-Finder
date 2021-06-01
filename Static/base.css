@@ -1,8 +1,8 @@
 body{
-    background-color: whitesmoke;
+    background-color: #ECEFF1;
 }
 .navbar{
-    background-color: wheat;
+    background-color: rgb(112, 68, 233);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
 }
@@ -10,6 +10,36 @@ body{
     margin-top: 5vh;
     background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn.dribbble.com/users/708424/screenshots/7961575/media/5634c53a6642cfbba99d9aaa52d42443.png');
 }
-.button-primary{
-    background-color: brown;
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-image:none !important;
+}
+.dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    background-color:rgb(105, 82, 170);
+}
+.searchbar{
+    background-color: #353b48;
+    border-radius: 50px;
+    max-height: 30px;
+}
+.search_input{
+    color: white;
+    border: none;
+    outline: none;
+    width: max-content;
+    background: none;
+    line-height: 28px;
+    padding-left: 20px;
+}
+.search_icon{
+    margin-right: 0px;
+    height: 30px;
+    width: 30px;
+    float: right;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    align-items: center;
+    border-radius: 50%;
+    color:red;
+    background-color: white;
 }
