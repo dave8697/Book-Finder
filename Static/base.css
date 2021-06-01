@@ -1,0 +1,15 @@
+body{
+    background-color: whitesmoke;
+}
+.navbar{
+    background-color: wheat;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#jumbo{
+    margin-top: 5vh;
+    background-color: wheat;
+}
+.button-primary{
+    background-color: brown;
+}
