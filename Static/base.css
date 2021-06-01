@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@700&display=swap');
 body{
     background-color: #ECEFF1;
 }
@@ -5,6 +7,20 @@ body{
     background-color: rgb(112, 68, 233);
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
+}
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: x-large;
+}
+.nav-item{
+    border-radius: 40px;
+    font-family: 'Comic Neue', cursive;
+    font-size: large;
+    padding: 0px 8px;
+}
+.nav-item:hover{
+    background-color: black;
+    color: white;
 }
 #jumbo{
     margin-top: 5vh;
@@ -16,7 +32,8 @@ body{
 .searchbar{
     background-color: #353b48;
     border-radius: 50px;
-    max-height: 30px;
+    max-height: 40px;
+    height: 33px;
 }
 .search_input{
     color: white;
@@ -24,13 +41,13 @@ body{
     outline: none;
     width: fit-content;
     background: none;
-    line-height: 28px;
+    line-height: 30px;
     padding-left: 20px;
 }
 .search_icon{
     margin-right: 0px;
-    height: 30px;
-    width: 30px;
+    height: 33px;
+    width: 33px;
     float: right;
     display: flex;
     justify-content: center;
