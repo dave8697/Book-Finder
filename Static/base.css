@@ -8,7 +8,7 @@ body{
 }
 #jumbo{
     margin-top: 5vh;
-    background-color: wheat;
+    background-image: linear-gradient(45deg, rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5)), url('https://cdn.dribbble.com/users/708424/screenshots/7961575/media/5634c53a6642cfbba99d9aaa52d42443.png');
 }
 .button-primary{
     background-color: brown;
