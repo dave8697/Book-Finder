@@ -60,6 +60,7 @@ body{
 }
 .author{
     color: #353b48;
+    font-size: small;
 }
 #spinner{
     position: fixed;
@@ -73,8 +74,9 @@ body{
     min-height: 200px;
     max-width: 150px;
     min-width: 150px;
+    align-self: center;
 }
-.card-text{
+.card-text, .card-text p{
     font-size: small;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -82,9 +84,15 @@ body{
    -webkit-line-clamp: 5;
    -webkit-box-orient: vertical;
 }
+.card-title{
+    font-size: large;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-line-clamp: 3;
+   -webkit-box-orient: vertical;
+}
 .card{
-    max-height: 400px;
-    min-height: 400px;
-    min-width: 150px;
-    max-width: 150px;
+    min-height: 440px;
+    max-height: 440px;
 }

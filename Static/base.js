@@ -4,7 +4,10 @@ async function search_books() {
     document.getElementById("trash").innerHTML = "";
     var spinner = document.getElementById("spinner");
     spinner.classList.remove("visually-hidden");
+    var foot = document.getElementById("footer");
+    foot.classList.add("visually-hidden");
     await fetch_books(x);
+    foot.classList.remove("visually-hidden");
     spinner.classList.add("visually-hidden");
 }
 
@@ -27,7 +30,6 @@ async function fetch_books(x) {
             cardSection.appendChild(row);
             var col = addelement(item.volumeInfo.imageLinks.thumbnail, item.volumeInfo.title, item.volumeInfo.publishedDate, item.volumeInfo.authors, item.volumeInfo.infoLink);
             document.getElementById(id).appendChild(col);
-
         }
     }
 }
@@ -41,19 +43,20 @@ function addelement(imgUrl, cardTitleText, publishedDate, authorText, extUrl) {
     var cardText = document.createElement("p");
     var moreBtn = document.createElement("a");
 
-    column.classList.add("col-6", "col-md", "d-flex", "align-items-stretch");
+    column.classList.add("col-6", "col-md");
     author.classList.add("author");
-    cardParent.classList.add("card");
-    cardImg.classList.add("card-img-top");
-    cardBody.classList.add("card-body");
+    cardParent.classList.add("card", "mt-3");
+    cardImg.classList.add("card-img-top", "mt-2", "mb-2");
+    cardBody.classList.add("card-body", "d-flex", "flex-column");
     cardTitle.classList.add("card-title");
     cardText.classList.add("card-text");
-    moreBtn.classList.add("btn", "btn-primary");
+    moreBtn.classList.add("btn", "btn-primary", "mt-auto");
 
     cardImg.setAttribute("src", `${imgUrl}`);
     cardImg.setAttribute("alt", `${cardTitleText}`);
     moreBtn.setAttribute("href", `${extUrl}`);
     moreBtn.setAttribute("target", "_blank");
+    cardTitle.setAttribute("style", "font-size: medium;")
 
     author.innerHTML = `${authorText}`;
     cardTitle.innerHTML = `${cardTitleText}`;
