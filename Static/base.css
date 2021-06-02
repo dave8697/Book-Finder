@@ -11,6 +11,7 @@ body{
 .navbar-brand{
     font-family: 'Pacifico', cursive;
     font-size: x-large;
+    padding-left: 50px;
 }
 .nav-item{
     border-radius: 40px;
@@ -56,4 +57,34 @@ body{
     border-radius: 50%;
     color:red;
     background-color: white;
+}
+.author{
+    color: #353b48;
+}
+#spinner{
+    position: fixed;
+    top: 50%;
+    bottom: 50%;
+    left: 50%;
+    right: 50%;
+}
+.card-img-top{
+    max-height: 200px;
+    min-height: 200px;
+    max-width: 150px;
+    min-width: 150px;
+}
+.card-text{
+    font-size: small;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+   -webkit-line-clamp: 5;
+   -webkit-box-orient: vertical;
+}
+.card{
+    max-height: 400px;
+    min-height: 400px;
+    min-width: 150px;
+    max-width: 150px;
 }

@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
     integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
   <link rel="stylesheet" href="Static/base.css">
+  <script src="./Static/base.js"></script>
   <title>Book Finder</title>
 </head>
 
@@ -47,8 +48,8 @@
             <div class="container">
               <div class="d-flex justify-content-center mt-1">
                 <div class="searchbar">
-                  <input class="search_input" type="text" name="" placeholder="Begin your search here">
-                  <a href="#" class="search_icon"><i class="fas fa-search"></i></a>
+                  <input class="search_input" type="text" name="" placeholder="Begin your search here" id="search">
+                  <a href="#" onclick="search_books()" class="search_icon"><i class="fas fa-search"></i></a>
                 </div>
               </div>
             </div>
@@ -57,7 +58,7 @@
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="container" id="trash">
     <div class="p-5 mb-4 rounded-3" id="jumbo">
       <div class="container-fluid py-5">
         <h1 class="display-5 fw-bold">Build Your Own Library</h1>
@@ -68,7 +69,10 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="spinner-border visually-hidden" role="status" id="spinner">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="container" id="cardsection">
     <div class="row">
       <div class="col-6 col-md">
         <div class="card">
@@ -137,7 +141,6 @@
       </div>
     </div>
   </div>
-  <script src="/Static/base.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
     integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
     crossorigin="anonymous"></script>
